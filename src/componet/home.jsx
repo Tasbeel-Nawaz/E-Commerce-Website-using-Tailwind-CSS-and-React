@@ -23,6 +23,7 @@ import Jewellery from "../assets/Womens Jewellery.jpg";
 import WShoes from "../assets/Womens Shoes.jpg";
 import WWatches from "../assets/Womens WatchesWomens Watches.jpg";
 import Skin from "../assets/Skin Care.jpg";
+import { Link } from "react-router-dom";
 
 const defaultImages = {
   beauty: beautiImage,
@@ -86,6 +87,17 @@ export default function Categories() {
 
   return (
     <>
+   
+       <div>
+        <p className=" absolute mt-100 ml-9 font-bold text-4xl text-white">
+        Top-Category
+        <Link to="/Top-Categories">
+                 <p className="font-[Arial] absolute -right-250 -mt-10 cursor-pointer hover:border-b-2 font-bold text-2xl text-blue-500">
+                   See more
+                   </p>
+               </Link>
+               </p>
+      </div>
       <div className="mt-100 overflow-hidden w-full h-[240px] bg-gray-800 text-black p-4 ">
         <div className="flex mt-10 flex-col justify-between space-y-4">
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -111,9 +123,14 @@ export default function Categories() {
         </div>
       </div>
       <div>
-        {" "}
+       
         <p className=" absolute mt-7 ml-9 font-bold text-4xl text-white">
           Top-Product
+          <Link to="/Top-Products">
+                 <p className="font-[Arial] absolute -right-257 -mt-9 cursor-pointer hover:border-b-2 font-bold text-2xl text-blue-500">
+                   See more
+                 </p>
+               </Link>
         </p>
       </div>
       <div className="mt-5 overflow-hidden w-full h-[260px] bg-gray-800 text-black p-4 ">
@@ -140,6 +157,11 @@ export default function Categories() {
 
       <p className=" absolute mt-7 ml-9 font-bold text-4xl text-white">
         Top-Deals
+        <Link to="/Top-deals">
+                 <p className="font-[Arial] absolute -right-267 -mt-9 cursor-pointer hover:border-b-2 font-bold text-2xl text-blue-500">
+                 See more
+                 </p>
+               </Link>
       </p>
 <div>
 

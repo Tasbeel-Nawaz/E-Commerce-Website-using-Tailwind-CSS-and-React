@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa"; 
-import Baner from "./Banner";
 import Logo from "../assets/logo.png";
 
 const Header = () => {
